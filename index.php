@@ -27,6 +27,9 @@ switch ($_SERVER['QUERY_STRING']) {
     case 'page=home':
         require('views/pages/home.php');
         break;
+    case 'page=user':
+        require('views/pages/user.php');
+        break;
     default:
         # code...
         break;
