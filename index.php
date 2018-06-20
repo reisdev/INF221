@@ -6,6 +6,7 @@
     <script src='src/js/bootstrap.bundle.min.js'></script>
     <script src='src/js/bootstrap.min.js'></script>
     <script src='src/js/popper.min.js'></script>
+    <link rel='shorcut icon' type='image/x-icon' href='./favicon.ico'>
     <link rel='stylesheet' href='src/css/style.css'>
     <link rel='stylesheet' href='src/css/bootstrap.min.css'>
     <link rel='stylesheet' href='src/css/bootstrap-grid.min.css'>
