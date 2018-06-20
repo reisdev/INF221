@@ -1,3 +1,11 @@
 .container {
     padding-top: 30px;
 }
+
+.card-disciplina {
+    display: inline-block !important;
+    float: left;
+    width: 340px;
+    line-break: auto;
+    margin: 10px !important;
+}

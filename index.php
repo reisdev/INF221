@@ -30,6 +30,9 @@ switch ($_SERVER['QUERY_STRING']) {
     case 'page=user':
         require('views/pages/user.php');
         break;
+    case 'page=disciplinas':
+        require('views/pages/disciplinas.php');
+        break;
     default:
         # code...
         break;
