@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <?php
-    $usuario = ['nome' => 'Eduardo Moreira Júnior','birthday' => '02-06-2018'];
+    $usuario = ['nome' => 'Eduardo Moreira Júnior','birthday' => '20-06-2018'];
 ?>
 
 <div class='container'>
