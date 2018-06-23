@@ -18,10 +18,13 @@
                 <a class="nav-link" href="?page=disciplinas">Disciplinas</a>
             </li>
         </ul>
-        <ul class='navbar-nav'>
+        <ul class="navbar-nav">
             <li class="nav-item d-none d-lg-block">
                 <img src="src/images/facebook.png" width="201" height="30" class="img-fluid" href="?page=user">
-            </li>    
+            </li>
+        </ul>
+            <ul class='navbar-nav'>
+
             <li class='nav-item'>
                 <a class="nav-link" href="?page=user">Minha conta</a>
             </li>
