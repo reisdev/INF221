@@ -1,17 +1,7 @@
 /* Header */
 
-.nav-link{
-    color: rgba(255,255,255,.8);
-}
-.nav-link:hover{
-    color: rgba(255,255,255,1);
-}
-.nav-search{
-    padding-left: 5px;
-    background-color: rgba(239,239,239,0.7);
-    border: 0px solid black;
-    border-radius: 3px;
-    color: rgba(0,0,0,.8);
+.padrao {
+    background-color: #b71b25 !important;
 }
 
 /* Disciplina */
@@ -21,7 +11,6 @@
 }
 
 .card-disciplina {
-    display: inline-block !important;
     float: left;
     width: 340px;
     line-break: auto;
