@@ -3,7 +3,7 @@
 <head>
         <title> SAD - Sistema de Avaliação de Disciplinas </title>
         <link rel='shorcut icon' type='image/x-icon' href='../favicon.ico'>
-        
+
         <script src='../src/js/jquery-3.3.1.min.js'></script>
         <script src='../src/js/bootstrap.bundle.min.js'></script>
         <script src='../src/js/bootstrap.min.js'></script>
@@ -52,7 +52,7 @@
             </ul>
             <ul class='navbar-nav'>
                 <?php
-                if(isset($_SESSION['logado']) !== true && $_SESSION['logado'] !== 1) {
+                if(empty($_SESSION['logado'])) {
                     echo "
                     <li class='nav-item'>
                         <button class='btn btn-primary' style='margin-left: 10px; margin-right: 10px;' class='nav-link' onclick='openModal()' href='http://localhost/INF221/pages/user.php'>
