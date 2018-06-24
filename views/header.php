@@ -17,12 +17,12 @@
                 </form>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="http://localhost/INF221/views/pages/home.php">
+                <a class="nav-link" href="http://localhost/INF221/pages/home.php">
                     Página Inicial <span class="sr-only">(current)</span>
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="http://localhost/INF221/views/pages/disciplinas.php">Disciplinas</a>
+                <a class="nav-link" href="http://localhost/INF221/pages/disciplinas.php">Disciplinas</a>
             </li>
         </ul>
         <ul class="navbar-nav">
@@ -33,7 +33,7 @@
             <ul class='navbar-nav'>
 
             <li class='nav-item'>
-                <a class="nav-link" href="http://localhost/INF221/views/pages/user.php">Minha conta</a>
+                <a class="nav-link" href="http://localhost/INF221/pages/user.php">Minha conta</a>
             </li>
             <!-- Barra de pesquisa para computadores -->
             <li class='nav-item d-none d-lg-block'>
