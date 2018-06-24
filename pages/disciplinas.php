@@ -18,7 +18,7 @@
     ?>
 
     <body>
-        <div class='container-fluid'>
+        <div class='container-fluid justify-content-center'>
             <?php
                 try {
                     if(isset($_POST['nome']) && $_POST['nome'] !== ""){
@@ -43,7 +43,6 @@
                                     <p> <b>Alunos matrículados</b> {$item['alunos']} </p>
                                 </div>
                                 <a href='/INF221/pages/avaliacao_disciplina.php?disciplina={$item["codigo"]}' class='mt-auto card-link btn btn-primary' role='button' style='float: 'bottom' '>Avaliar</a>
-                                </div>
                             </div>
                         </div>
                         ";
