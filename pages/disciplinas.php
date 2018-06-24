@@ -37,7 +37,7 @@
                     echo "
                         <div class='card card-disciplina'>
                             <div class='d-flex flex-column card-body mt-auto'>
-                                <h5 class='card-title'> {$item['nome']} </h5>
+                                <h5 class='card-title'> <a href='/INF221/pages/resumo_disciplina.php?disciplina={$item["codigo"]}'> {$item['nome']} </a></h5>
                                 <div class='card-text'>
                                     <p> <b>Código:</b> {$item['codigo']} </p>
                                     <p> <b>Alunos matrículados</b> {$item['alunos']} </p>
