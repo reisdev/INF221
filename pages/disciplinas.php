@@ -43,8 +43,12 @@
                                     <p> <b>Código:</b> {$item['codigo']} </p>
                                     <p> <b>Alunos matrículados</b> {$item['alunos']} </p>
                                 </div>
+<<<<<<< HEAD
                                 <a href='/INF221/pages/avaliacao_disciplina.php?disciplina={$item["codigo"]}' class='mt-auto card-link btn btn-primary' role='button' style='float: 'bottom' '>Avaliar</a>
                                 </div>
+=======
+                                <a class='mt-auto card-link btn btn-primary' style='float: 'bottom' '>Avaliar</a>
+>>>>>>> a915c41feaa912c5c170dfc899b5c68f3593cfc6
                             </div>
                         </div>
                         ";
