@@ -18,6 +18,11 @@
 </head>
 
 <header>
+    <script>
+        const openModal = () => {
+            $('#modalLogin').modal('toggle')
+        }
+    </script>
     <nav class='navbar navbar-expand-lg navbar-dark bg-dark' align='center'>
         <a class='navbar-brand' href='/'> SAD </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -44,15 +49,14 @@
                     <a class="nav-link" href="http://localhost/INF221/pages/disciplinas.php">Disciplinas</a>
                 </li>
             </ul>
-            <ul class="navbar-nav">
-                <li class="nav-item d-none d-lg-block">
-                    <img src="/INF221/src/images/facebook.png" width="201" height="30" class="img-fluid" href="?page=user">
-                </li>
-            </ul>
             <ul class='navbar-nav'>
-                <li class='nav-item'>
-                    <a class="nav-link" href="http://localhost/INF221/pages/user.php">Minha conta</a>
-                </li>
+                <?php
+                if(!isset($_SESSION['user']) ) {
+                    echo "<li class='nav-item'>
+                        <button class='btn btn-primary' style='margin-left: 10px; margin-right: 10px;' class='nav-link' onclick='openModal()' href='http://localhost/INF221/pages/user.php'>Minha conta</button>
+                    </li>";
+                }
+                ?>
                 <!-- Barra de pesquisa para computadores -->
                 <li class='nav-item d-none d-lg-block'>
                     <form class="form-inline my-2 my-lg-0" action='../pages/disciplinas.php' method='POST'>
@@ -64,3 +68,34 @@
         </div>
     </nav>
 </header>
+
+<body>
+    <div class="modal fade" id='modalLogin' tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Faça login com sua conta</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class='form-group'>
+                        <label>Email</label>
+                        <input class='form-control' type='email'/>
+                    </div>
+                    <div class='form-group'>
+                        <label>Senha</label>
+                        <input class='form-control' type='password'/>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                <button type="button" class="btn btn-success">Entrar</button>
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
