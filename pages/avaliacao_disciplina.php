@@ -10,28 +10,6 @@
         }
     ?>
 
-<!-- <div class="row">
-    <div class='container' >
-                <label> Avaliação: </label>
-                <img src="../src/images/rating-star.jpg" width=105px >
-                <br>
-                <div class="form-group">
-                    <label for="dissertacao">Dissertação:</label>
-                    <small class="form-text text-muted">Tente explicar os métodos de avaliação, controle de presença, entre outros detalhes.</small>
-                    <textarea class="form-control" rows="5" id="dissertacao"></textarea>
-
-                <label> Avaliação: </label>
-                <img src="../src/images/rating-star.jpg" width=105px >
-                <br>
-                <div class="form-group">
-                    <label for="dissertacao">Dissertação:</label>
-                    <small class="form-text text-muted">Tente explicar os métodos de avaliação, controle de presença, entre outros detalhes.</small>
-                    <textarea class="form-control" rows="5" id="dissertacao"></textarea>
-                </div>
-
-    </div>
-</div> -->
-
 <div class="container">
     <div class="row">
         <div class="col-md-6">
