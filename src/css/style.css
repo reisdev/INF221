@@ -50,10 +50,16 @@
     align-content: center;
     align-items: center;
     min-height: 220px;
-    width: 40%;
-    max-width: 50%;
     margin: auto;
+}
+.card-avaliacao-perfil {
+    justify-content: center;
+    align-content: center;
+    align-items: center;
 
+    align-items: center;
+    min-height: 280px;
+    margin: auto ;
 }
 
 /* Index */
