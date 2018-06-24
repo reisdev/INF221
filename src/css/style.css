@@ -38,7 +38,8 @@
 }
 
 .card-resumo{
-    min-height: 220px;
+    align-items: center;
+    min-height: 500px;
     width: 100%;
     max-width: 31%;
     float: left;
