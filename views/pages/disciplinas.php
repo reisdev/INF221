@@ -8,7 +8,7 @@
     ];
 ?>
 
-<div class='container'>
+<div class='d-flex container justify-content-center'>
     <?php
         foreach($disciplinas as $item){
             echo "

@@ -12,9 +12,10 @@
 
 .card-disciplina {
     float: left;
-    width: 340px;
     line-break: auto;
-    margin: 10px !important;
+    margin: 0 10px 20px 10px;
+    width: 100%;
+    max-width: 310px !important;
 }
 
 /* Index */
