@@ -43,8 +43,7 @@
                                     <p> <b>Código:</b> {$item['codigo']} </p>
                                     <p> <b>Alunos matrículados</b> {$item['alunos']} </p>
                                 </div>
-                                <a class='mt-auto card-link btn btn-primary' data-toggle='collapse' role='button' data-target='#{$item['codigo']}' style='float: 'bottom' '>Avaliar</a>
-                                </div>
+                                <a class='mt-auto card-link btn btn-primary' style='float: 'bottom' '>Avaliar</a>
                             </div>
                         </div>
                         ";
