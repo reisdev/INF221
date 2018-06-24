@@ -53,7 +53,7 @@
                                 $count = 0;
                                 foreach ($avaliacoes as $item) {
                                     $active = "class='active'";
-                                    echo "<li data-target='#carouselAvaliacao' style='background-color:black' data-slide-to='". $count ."' ".$active."></li>";
+                                    echo "<li class='slider-selector' data-target='#carouselAvaliacao' data-slide-to='". $count ."' ".$active."></li>";
                                     $count++;
                                     $active = "";
                                 }
@@ -92,11 +92,11 @@
                             }
                         ?>
                             <a class="carousel-control-prev" href="#carouselAvaliacao" role="button" data-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true" style="background-color:black"></span>
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span class="sr-only">Previous</span>
                             </a>
                             <a class="carousel-control-next" href="#carouselAvaliacao" role="button" data-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true" style="background-color:black"></span>
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="sr-only">Next</span>
                             </a>
                         </div>
@@ -111,7 +111,7 @@
                                 $count = 0;
                                 foreach ($usuarios as $item) {
                                     $active = "class='active'";
-                                    echo "<li data-target='#carouselFriends' style='background-color:black' data-slide-to='". $count ."' ".$active."></li>";
+                                    echo "<li class='slider-selector' data-target='#carouselFriends' data-slide-to='". $count ."' ".$active."></li>";
                                     $count++;
                                     $active = "";
                                 }
@@ -144,11 +144,11 @@
                                 }
                             ?>
                             <a class="carousel-control-prev" href="#carouselFriends" role="button" data-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true" style="background-color:black"></span>
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span class="sr-only">Previous</span>
                             </a>
                             <a class="carousel-control-next" href="#carouselFriends" role="button" data-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true" style="background-color:black"></span>
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="sr-only">Next</span>
                             </a>
                         </div>
