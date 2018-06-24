@@ -46,6 +46,7 @@
                                                 <p><b>Nome do Usuário:</b> {$item['nome']} </p>
                                                 <p><b>Data de nascimento:</b> {$item['birthday']}</p>
                                                 <p><b>ID do Facebook:</b> {$item['CPF']}</p>
+                                                <a href='/INF221/pages/profile.php?nome={$item['nome']}' class='mt-auto card-link btn btn-primary' role='button' style='float: 'bottom' '>Ver Perfil</a>
                                             </div>
                                         </div>
                                     </div>
