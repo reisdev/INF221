@@ -1,5 +1,9 @@
 /* Header */
 
+html,body {
+    background-color: #d3dae5 !important;
+}
+
 .padrao {
     background-color: #b71b25 !important;
 }
