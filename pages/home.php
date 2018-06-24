@@ -5,7 +5,7 @@
     <body>
     <h2 align="center"> Ranking: </h2>
 
-    <div class='container'>
+    <div class='container-fluid'>
         <div align="center" class='card card-disciplina'>
             <div class='card-body'>
                 <h5 class='card-title'> Recomendadas </h5>
