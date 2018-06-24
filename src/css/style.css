@@ -36,6 +36,14 @@
     margin: 0 10px 20px 10px;
 }
 
+.card-perfil {
+    min-height: 220px;
+    width: 100%;
+    max-width: 31.7%;
+    float: left;
+    margin: 50px 10px 5px 10px;
+}
+
 /* Index */
 
 #body-style{
@@ -58,4 +66,3 @@
     margin-left: 10px;
     margin-right: 20px;
 }
-

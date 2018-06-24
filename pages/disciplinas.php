@@ -3,11 +3,6 @@
 <html>
     <?php include('../views/header.php'); ?>
     <?php
-        $search_on = 0;
-        if(!empty($_POST["nome"])){
-            $search = $_POST["nome"];
-            $search_on = 1;
-        }
         $disciplinas = [
             [ 'nome' => 'Cálculo I', 'codigo' => 'MAT140', 'alunos' => '450'],
             [ 'nome' => 'Cálculo II', 'codigo' => 'MAT147', 'alunos' => '240'],
