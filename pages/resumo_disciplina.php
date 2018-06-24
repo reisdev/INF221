@@ -23,8 +23,7 @@
 
     <div class="container">
     <!-- Editável se usuário logado -->
-        <div class='card card-resumo'>
-            <div class='card'>
+            <!-- <div class='card card-resumo'>
                 <div class='card-body' width='100%'>
                     <div class="profile-header-img">
                         <img class="img-circle" src="../src/images/profile.jpg" />
@@ -44,11 +43,9 @@
                         <a href='' class='mt-auto card-link btn btn-primary' role='button' style='float: 'bottom' ' >Editar</a>
                     </div>
                 </div>
-            </div>
-        </div>
+            </div> -->
         <!-- Não editável -->
-        <div class='card card-resumo'>
-            <div class='card'>
+            <!-- <div class='card card-resumo'>
                 <div class='card-body' width='100%'>
                     <div class="profile-header-img">
                         <img class="img-circle" src="../src/images/profile2.jpg" />
@@ -66,10 +63,8 @@
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class='card card-resumo'>
-            <div class='card'>
+            <div class='card card-resumo'>
                 <div class='card-body' width='100%'>
                     <div class="profile-header-img">
                         <img class="img-circle" src="../src/images/profile3.jpg" />
@@ -86,8 +81,25 @@
                         </div>
                     </div>
                 </div>
+            </div> -->
+
+            <div class="card card-resumo" style="width: 18rem;">
+                <img class="card-img-top" src="../src/images/profile3.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
             </div>
-        </div>
+
+            <div class="card card-resumo" style="width: 18rem;">
+                <img class="card-img-top" src="../src/images/profile3.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
     </div>
 
 
