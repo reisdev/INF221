@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<?php include('../views/header.php'); ?>
+<?php require '../views/header.php'; ?>
 
 <body>
     <div class='container-fluid'>

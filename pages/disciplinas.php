@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <html>
-    <?php include('../views/header.php'); ?>
+    <?php require '../views/header.php'; ?>
     <?php
         $disciplinas = [
             [ 'nome' => 'Cálculo I', 'codigo' => 'MAT140', 'alunos' => '450'],
