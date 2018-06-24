@@ -10,7 +10,11 @@
         }
         $disciplinas = [
             [ 'nome' => 'Cálculo I', 'codigo' => 'MAT140', 'alunos' => '450'],
+            [ 'nome' => 'Cálculo II', 'codigo' => 'MAT147', 'alunos' => '240'],
+            [ 'nome' => 'Cálculo III', 'codigo' => 'MAT241', 'alunos' => '70'],
             [ 'nome' => 'Programação I', 'codigo' => 'INF110', 'alunos' => '60'],
+            [ 'nome' => 'Programação II', 'codigo' => 'INF112', 'alunos' => '60'],
+            [ 'nome' => 'Estrutura de Dados', 'codigo' => 'INF213', 'alunos' => '60'],
             [ 'nome' => 'Engenharia de Software I', 'codigo' => 'INF221', 'alunos' => '36'],
             [ 'nome' => 'Física I', 'codigo' => 'FIS201', 'alunos' => '76'],
             [ 'nome' => 'Organização de Computadores I', 'codigo' => 'INF251', 'alunos' => '40'],
@@ -43,7 +47,8 @@
                                     <p> <b>Código:</b> {$item['codigo']} </p>
                                     <p> <b>Alunos matrículados</b> {$item['alunos']} </p>
                                 </div>
-                                <a class='mt-auto card-link btn btn-primary' style='float: 'bottom' '>Avaliar</a>
+                                <a href='/INF221/pages/avaliacao_disciplina.php?disciplina={$item["codigo"]}' class='mt-auto card-link btn btn-primary' role='button' style='float: 'bottom' '>Avaliar</a>
+                                </div>
                             </div>
                         </div>
                         ";

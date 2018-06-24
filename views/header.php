@@ -29,7 +29,12 @@
                 <!-- Barra de pesquisa que aparece para celulares -->
                 <li class="nav-item d-md-block d-lg-none">
                     <form class="my-lg-0" style='width: 80%; display: inline-flex'>
+<<<<<<< HEAD
                         <input class="form-control my-2 my-sm-0" id="nome" type="search" placeholder="Digite sua pesquisa" aria-label="Search" style='height: 38px; padding: .375rem .75rem; margin: 8px 0 8px 0'>
+=======
+                        <input class="form-control my-2 my-sm-0" type="search" placeholder="Digite sua pesquisa" 
+                            aria-label="Search" style='height: 38px; padding: .375rem .75rem; margin: 8px 0 8px 0'>
+>>>>>>> da97336ae712d344914fcd301f887d1b67f8c1cf
                         <button class="btn btn-outline-primary my-2 my-sm-0" fontColor='black' type="submit">Pesquisar</button>
                     </form>
                 </li>
