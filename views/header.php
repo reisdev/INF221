@@ -15,6 +15,7 @@
         <link rel='stylesheet' href='../src/css/bootstrap-reboot.min.css'>
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <?php session_start(); ?>
 </head>
 
 <header>
@@ -51,10 +52,27 @@
             </ul>
             <ul class='navbar-nav'>
                 <?php
-                if(!isset($_SESSION['user']) ) {
-                    echo "<li class='nav-item'>
-                        <button class='btn btn-primary' style='margin-left: 10px; margin-right: 10px;' class='nav-link' onclick='openModal()' href='http://localhost/INF221/pages/user.php'>Minha conta</button>
+                if(isset($_SESSION['logado']) !== true && $_SESSION['logado'] !== 1) {
+                    echo "
+                    <li class='nav-item'>
+                        <button class='btn btn-primary' style='margin-left: 10px; margin-right: 10px;' class='nav-link' onclick='openModal()' href='http://localhost/INF221/pages/user.php'>
+                            Login
+                        </button>
                     </li>";
+                }
+                else {
+                    echo "
+                    <li class='nav-item'>
+                        <a class='nav-link' style='margin-left: 5px; margin-right: 5px;' href='http://localhost/INF221/pages/user.php'>
+                            Minha Conta
+                        </a>
+                    </li>
+                    <li class='nav-item'>
+                        <a class='nav-link' style='margin-left: 5px; margin-right: 10px;' href='http://localhost/INF221/src/modules/logoff.php'>
+                            Sair
+                        </a>
+                    </li>
+                    ";
                 }
                 ?>
                 <!-- Barra de pesquisa para computadores -->
@@ -71,31 +89,33 @@
 
 <body>
     <div class="modal fade" id='modalLogin' tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title">Faça login com sua conta</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-                </button>
+        <form action='../src/modules/login.php' method='post'>
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Faça login com sua conta</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class='form-group'>
+                            <label>Email</label>
+                            <input class='form-control' name='email' type='email'/>
+                        </div>
+                        <div class='form-group'>
+                            <label>Senha</label>
+                            <input class='form-control' name='pass' type='password'/>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    <button class="btn btn-success" type='submit'>Entrar</button>
+                </div>
+                </div>
             </div>
-            <div class="modal-body">
-                <form>
-                    <div class='form-group'>
-                        <label>Email</label>
-                        <input class='form-control' type='email'/>
-                    </div>
-                    <div class='form-group'>
-                        <label>Senha</label>
-                        <input class='form-control' type='password'/>
-                    </div>
-                </form>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                <button type="button" class="btn btn-success">Entrar</button>
-            </div>
-            </div>
-        </div>
+        </form>
     </div>
 </body>
