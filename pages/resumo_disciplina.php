@@ -4,13 +4,6 @@
     <?php require '../views/header.php'; ?>
     <body>
     <?php
-        if(!empty($_GET["disciplina"])){
-            $disciplina = $_GET["disciplina"];
-            echo "<h3 class='form-control' align=center> Resumo da disciplina {$disciplina} </h3>";
-        }
-    ?>
-
-    <?php
         $usuario = [['nome' => 'Eduardo Moreira Júnior','birthday' => '20-06-2018', 'CPF' => '1921548239102'],
                     ['nome' => 'Mateus Armond Santos','birthday' => '06-01-2018', 'CPF' => '192585256539102'],
                     [ 'nome' => 'Matheus Negro1', 'birthday' => '21-06-2018', 'CPF' => '1921548239102']
@@ -21,12 +14,20 @@
         $dissert2 = "Fuja! Explica mal e tem mão muito pesada!!!";
     ?>
 
-    <div class="container">
-    <!-- Editável se usuário logado -->
+    <div class="container-fluid" style='margin-bottom: 20px'>
+        <div class='card'>
+        <div class='card-body' >
+        <?php
+        if(!empty($_GET["disciplina"])){
+            $disciplina = $_GET["disciplina"];
+            echo "<h3 class='display-4' align='center' style='padding-bottom: 20px; font-size: 40px;'> Resumo da disciplina {$disciplina} </h3>";
+        }
+        ?>
+        <!-- Editável se usuário logado -->
         <div class="card card-resumo">
             <img class="card-img-top card-img-resumo" src="../src/images/profile.jpg" alt="Card image cap">
-            <div class="card-body">
-            <div class="row">
+                <div class="card-body">
+                <div class="row">
                     <div class="col-md-10">
                         <p><b>Nome do Usuário:</b> <?php echo $usuario[0]['nome']; ?></p>
                     </div>
@@ -91,12 +92,12 @@
                 </div>
             </div>
         </div>
-
+        <div align='center'>
+            <a href='' class='mt-auto card-link btn btn-primary' role='button' style='float:bottom' >Carregar mais...</a>
+        </div>
     </div>
-
-    <div align=center>
-        <a href='' class='mt-auto card-link btn btn-primary' role='button' style='float: 'bottom' ' >Carregar mais...</a>
     </div>
-
-
+    </div>
+    </div>
+</body>
 </html>
