@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <html>
-    <?php include('../views/header.php'); ?>
+    <?php require '../views/header.php'; ?>
     <body>
         Testando o bot
     </body>

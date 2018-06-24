@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <html>
-    <?php include('../views/header.php'); ?>
+    <?php require '../views/header.php'; ?>
     <body>
     <?php
         if(!empty($_GET["disciplina"])){

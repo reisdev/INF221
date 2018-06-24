@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 
 <html>
-    <?php include('../views/header.php'); ?>
+    <?php require '../views/header.php'; ?>
     <body>
     <?php
-        if(!empty($_GET["disciplina"])){
-            $disciplina = $_GET["disciplina"];
-            echo "<h3 class='form-control' align=center> Avaliação da disciplina {$disciplina} </h3>";
-        }
+    if (!empty($_GET["disciplina"]) ) {
+        $disciplina = $_GET["disciplina"];
+        echo "<h3 class='form-control' align=center> Avaliação da disciplina {$disciplina} </h3>";
+    }
     ?>
 
 <div class="container">
