@@ -21,21 +21,7 @@
         ini_set('display_startup_errors', 1);
         ini_set('display_errors', 1);
         error_reporting(-1);
-        //Switch pras rotas
-        switch ( explode( "/", $_GET['url'])[0]) {
-            case 'page=home':
-                require('views/pages/home.php');
-                break;
-            case 'page=user':
-                require('views/pages/user.php');
-                break;
-            case 'page=disciplinas':
-                require('views/pages/disciplinas.php');
-                break;
-            default:
-            # code...
-                break;
-        }
+        header('Location: http://localhost/INF221/views/pages/home.php');
         ?>
     </body>
 </html>

@@ -29,7 +29,6 @@
         <div class='d-flex container justify-content-center'>
             <?php
                 foreach($disciplinas as $item){
-                    echo print_r($_POST);
                     echo "
                         <div class='card card-disciplina'>
                             <div class='card-body'>
