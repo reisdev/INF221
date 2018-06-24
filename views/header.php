@@ -45,8 +45,7 @@
                     <img src="/INF221/src/images/facebook.png" width="201" height="30" class="img-fluid" href="?page=user">
                 </li>
             </ul>
-                <ul class='navbar-nav'>
-
+            <ul class='navbar-nav'>
                 <li class='nav-item'>
                     <a class="nav-link" href="http://localhost/INF221/pages/user.php">Minha conta</a>
                 </li>

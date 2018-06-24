@@ -3,6 +3,11 @@
 <html>
     <?php include('../views/header.php'); ?>
     <?php
+        $search_on = 0;
+        if(!empty($_POST["nome"])){
+            $search = $_POST["nome"];
+            $search_on = 1;
+        }
         $disciplinas = [
             [ 'nome' => 'Cálculo I', 'codigo' => 'MAT140', 'alunos' => '450'],
             [ 'nome' => 'Programação I', 'codigo' => 'INF110', 'alunos' => '60'],
@@ -11,6 +16,7 @@
             [ 'nome' => 'Organização de Computadores I', 'codigo' => 'INF251', 'alunos' => '40']
         ];
     ?>
+
     <body>
         <div class='container-fluid'>
             <?php
@@ -47,8 +53,8 @@
                                 </form>
                                 </div>
                             </div>
-                        </div>
-                    ";
+                        ";
+                    }
                 }
             ?>
         </div>
