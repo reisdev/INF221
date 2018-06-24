@@ -80,8 +80,8 @@
                                                 <p> <b>Recomenda?:</b> {$item['recomenda']} </p>
                                             </div>
                                         </div>
-                                        <div align='center'> <a  href='/INF221/pages/avaliacao_disciplina.php?disciplina={$item["codigo"]}' class='mt-auto card-link btn btn-primary' role='button' style='float: 'bottom' '>Editar</a>
-                                    </div></div>
+                                        <div align='center'> <a  href='/INF221/pages/avaliacao_disciplina.php?disciplina={$item["codigo"]}' class='mt-auto card-link btn btn-primary' role='button' style='float: 'bottom' '>Editar</a></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
