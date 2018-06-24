@@ -37,8 +37,8 @@
             </li>
             <!-- Barra de pesquisa para computadores -->
             <li class='nav-item d-none d-lg-block'>
-                <form class="form-inline my-2 my-lg-0">
-                    <input name='nome' class="form-control mr-sm-2" type="search" placeholder="Digite sua pesquisa" aria-label="Search">
+                <form class="form-inline my-2 my-lg-0" action="http://localhost/INF221/views/pages/disciplinas.php" method="post">
+                    <input name='nome' class="form-control mr-sm-2" type="search" name="nome" placeholder="Digite sua pesquisa" aria-label="Search">
                     <button class="btn btn-outline-primary my-2 my-sm-0" fontColor='black' type="submit">Pesquisar</button>
                 </form>
             </li>

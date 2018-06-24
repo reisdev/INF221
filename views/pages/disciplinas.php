@@ -19,37 +19,72 @@
             <?php require('../header.php'); ?>
         </header>
     <?php
+        $search_on = 0;
+        if(!empty($_POST["nome"])){
+            $search = $_POST["nome"];
+            $search_on = 1;
+        }
         $disciplinas = [
             [ 'nome' => 'Cálculo I', 'codigo' => 'MAT140', 'alunos' => '450'],
             [ 'nome' => 'Programação I', 'codigo' => 'INF110', 'alunos' => '60'],
             [ 'nome' => 'Engenharia de Software I', 'codigo' => 'INF221', 'alunos' => '36']
         ];
     ?>
+
     <body>
         <div class='d-flex container justify-content-center'>
             <?php
-                foreach($disciplinas as $item){
-                    echo "
-                        <div class='card card-disciplina'>
-                            <div class='card-body'>
-                                <h5 class='card-title'> {$item['nome']} </h5>
-                                <div class='card-text'>
-                                    <p> <b>Código:</b> {$item['codigo']} </p>
-                                    <p> <b>Alunos matrículados</b> {$item['alunos']} </p>
+                if($search_on == 1){
+                    foreach($disciplinas as $item){
+                        if($item['nome'] == $search){
+                            echo "
+                                <div class='card card-disciplina'>
+                                    <div class='card-body'>
+                                        <h5 class='card-title'> {$item['nome']} </h5>
+                                        <div class='card-text'>
+                                            <p> <b>Código:</b> {$item['codigo']} </p>
+                                            <p> <b>Alunos matrículados</b> {$item['alunos']} </p>
+                                        </div>
+                                        <a class='card-link btn btn-primary' data-toggle='collapse' role='button' data-target='#{$item['codigo']}'>Avaliar</a>
+                                        <div style='margin: 0px 0px 30px 0px' id='{$item['codigo']}' class='collapse' aria-expanded='true' aria-labelledby='{$item['codigo']}'>
+                                        Avaliação: <br>
+                                        <img src='/INF221/src/images/rating-star.jpg' width='120' class='img-fluid' href='?page=user'> <br>
+                                        <label for='textarea'> Dissertação: </label>
+                                        <form action='myform.cgi'>
+                                            <textarea name='textarea' style='width:100%;height:150px;max-height:300px;' maxlength='5000'></textarea>
+                                            <br><input style='float: right;' class='card-link btn btn-primary' type='submit' value='Enviar'>
+                                        </form>
+                                        </div>
+                                    </div>
                                 </div>
-                                <a class='card-link btn btn-primary' data-toggle='collapse' role='button' data-target='#{$item['codigo']}'>Avaliar</a>
-                                <div style='margin: 0px 0px 30px 0px' id='{$item['codigo']}' class='collapse' aria-expanded='true' aria-labelledby='{$item['codigo']}'>
-                                Avaliação: <br>
-                                <img src='/INF221/src/images/rating-star.jpg' width='120' class='img-fluid' href='?page=user'> <br>
-                                <label for='textarea'> Dissertação: </label>
-                                <form action='myform.cgi'>
-                                    <textarea name='textarea' style='width:100%;height:150px;max-height:300px;' maxlength='5000'></textarea>
-                                    <br><input style='float: right;' class='card-link btn btn-primary' type='submit' value='Enviar'>
-                                </form>
+                            ";
+                        }
+                    }
+                }
+                else{
+                    foreach($disciplinas as $item){
+                        echo "
+                            <div class='card card-disciplina'>
+                                <div class='card-body'>
+                                    <h5 class='card-title'> {$item['nome']} </h5>
+                                    <div class='card-text'>
+                                        <p> <b>Código:</b> {$item['codigo']} </p>
+                                        <p> <b>Alunos matrículados</b> {$item['alunos']} </p>
+                                    </div>
+                                    <a class='card-link btn btn-primary' data-toggle='collapse' role='button' data-target='#{$item['codigo']}'>Avaliar</a>
+                                    <div style='margin: 0px 0px 30px 0px' id='{$item['codigo']}' class='collapse' aria-expanded='true' aria-labelledby='{$item['codigo']}'>
+                                    Avaliação: <br>
+                                    <img src='/INF221/src/images/rating-star.jpg' width='120' class='img-fluid' href='?page=user'> <br>
+                                    <label for='textarea'> Dissertação: </label>
+                                    <form action='myform.cgi'>
+                                        <textarea name='textarea' style='width:100%;height:150px;max-height:300px;' maxlength='5000'></textarea>
+                                        <br><input style='float: right;' class='card-link btn btn-primary' type='submit' value='Enviar'>
+                                    </form>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    ";
+                        ";
+                    }
                 }
             ?>
         </div>
