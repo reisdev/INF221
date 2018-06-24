@@ -13,7 +13,6 @@
         <link rel='stylesheet' href='src/css/bootstrap-reboot.min.css'>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-
     <body id="body-style">
         <header>
             <?php require 'views/header.php'; ?>
@@ -23,7 +22,7 @@
         ini_set('display_errors', 1);
         error_reporting(-1);
         //Switch pras rotas
-        switch ($_SERVER['QUERY_STRING']) {
+        switch ( explode( "/", $_GET['url'])[0]) {
             case 'page=home':
                 require('views/pages/home.php');
                 break;

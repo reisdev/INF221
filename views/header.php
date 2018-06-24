@@ -17,28 +17,28 @@
                 </form>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="?page=home">
+                <a class="nav-link" href="http://localhost/INF221/views/pages/home.php">
                     Página Inicial <span class="sr-only">(current)</span>
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="?page=disciplinas">Disciplinas</a>
+                <a class="nav-link" href="http://localhost/INF221/views/pages/disciplinas.php">Disciplinas</a>
             </li>
         </ul>
         <ul class="navbar-nav">
             <li class="nav-item d-none d-lg-block">
-                <img src="src/images/facebook.png" width="201" height="30" class="img-fluid" href="?page=user">
+                <img src="/INF221/src/images/facebook.png" width="201" height="30" class="img-fluid" href="?page=user">
             </li>
         </ul>
             <ul class='navbar-nav'>
 
             <li class='nav-item'>
-                <a class="nav-link" href="?page=user">Minha conta</a>
+                <a class="nav-link" href="http://localhost/INF221/views/pages/user.php">Minha conta</a>
             </li>
             <!-- Barra de pesquisa para computadores -->
             <li class='nav-item d-none d-lg-block'>
                 <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Digite sua pesquisa" aria-label="Search">
+                    <input name='nome' class="form-control mr-sm-2" type="search" placeholder="Digite sua pesquisa" aria-label="Search">
                     <button class="btn btn-outline-primary my-2 my-sm-0" fontColor='black' type="submit">Pesquisar</button>
                 </form>
             </li>
