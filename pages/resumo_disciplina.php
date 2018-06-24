@@ -96,8 +96,5 @@
             <a href='' class='mt-auto card-link btn btn-primary' role='button' style='float:bottom' >Carregar mais...</a>
         </div>
     </div>
-    </div>
-    </div>
-    </div>
 </body>
 </html>
