@@ -13,7 +13,8 @@
             [ 'nome' => 'Programação I', 'codigo' => 'INF110', 'alunos' => '60'],
             [ 'nome' => 'Engenharia de Software I', 'codigo' => 'INF221', 'alunos' => '36'],
             [ 'nome' => 'Física I', 'codigo' => 'FIS201', 'alunos' => '76'],
-            [ 'nome' => 'Organização de Computadores I', 'codigo' => 'INF251', 'alunos' => '40']
+            [ 'nome' => 'Organização de Computadores I', 'codigo' => 'INF251', 'alunos' => '40'],
+            [ 'nome' => 'Linguagens Formais e Autômatos', 'codigo' => 'INF330', 'alunos' => '27']
         ];
     ?>
 
@@ -43,14 +44,6 @@
                                     <p> <b>Alunos matrículados</b> {$item['alunos']} </p>
                                 </div>
                                 <a class='mt-auto card-link btn btn-primary' data-toggle='collapse' role='button' data-target='#{$item['codigo']}' style='float: 'bottom' '>Avaliar</a>
-                                <div style='margin: 0px 0px 30px 0px' id='{$item['codigo']}' class='collapse' aria-expanded='true' aria-labelledby='{$item['codigo']}'>
-                                Avaliação: <br>
-                                <img src='/INF221/src/images/rating-star.jpg' width='120' class='img-fluid' href='?page=user'> <br>
-                                <label for='textarea'> Dissertação: </label>
-                                <form action='myform.cgi'>
-                                    <textarea name='textarea' style='width:100%;height:150px;max-height:300px;' maxlength='5000'></textarea>
-                                    <br><input style='float: right;' class='card-link btn btn-primary' type='submit' value='Enviar'>
-                                </form>
                                 </div>
                             </div>
                         </div>

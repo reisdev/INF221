@@ -21,15 +21,13 @@
 }
 
 .card-disciplina {
+    min-height: 220px;
+    width: 100%;
+    max-width: 31.7%;
     float: left;
     margin: 0 10px 20px 10px;
-    width: 100%;
 }
 
-.card {
-    min-height: 220px;
-    max-width: 31.7%;
-}
 
 /* Index */
 
