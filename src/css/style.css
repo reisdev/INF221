@@ -8,6 +8,9 @@ html,body {
     background-color: #b71b25 !important;
 }
 
+.form-check {
+    margin: 15px;
+}
 /* Disciplina */
 
 .container-fluid {
