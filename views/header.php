@@ -2,7 +2,7 @@
 
 <head>
         <title> SAD - Sistema de Avaliação de Disciplinas </title>
-        <link rel='shorcut icon' type='image/x-icon' href='./favicon.ico'>
+        <link rel='shorcut icon' type='image/x-icon' href='../favicon.ico'>
         
         <script src='../src/js/jquery-3.3.1.min.js'></script>
         <script src='../src/js/bootstrap.bundle.min.js'></script>
