@@ -26,8 +26,15 @@
         <div class="card card-resumo">
             <img class="card-img-top card-img-resumo" src="../src/images/profile.jpg" alt="Card image cap">
             <div class="card-body">
-                <div style='vertical-align: middle'>
-                    <p><b>Nome do Usuário:</b> <?php echo $usuario[0]['nome']; ?></p>
+            <div class="row">
+                    <div class="col-md-10">
+                        <p><b>Nome do Usuário:</b> <?php echo $usuario[0]['nome']; ?></p>
+                    </div>
+                    <div class="col-md-2">
+                        <img width=25px src="../src/images/class-arrow-up.png"> <!-- botão --> <!-- botão -->
+                        <a> 4 </a>
+                        <img width=25px src="../src/images/class-arrow-down.png"> <!-- botão -->
+                    </div>
                 </div>
                 <label> Avaliação: </label>
                 <img src="../src/images/rating-star.jpg" width=105px >
@@ -44,26 +51,44 @@
         <div class="card card-resumo">
             <img class="card-img-top card-img-resumo" src="../src/images/profile2.jpg" alt="Card image cap">
             <div class="card-body">
-                <div style='vertical-align: middle'>
-                    <p><b>Nome do Usuário:</b> <?php echo $usuario[1]['nome']; ?></p>
+                <div class="row">
+                    <div class="col-md-10">
+                        <p><b>Nome do Usuário:</b> <?php echo $usuario[1]['nome']; ?></p>
+                    </div>
+                    <div class="col-md-2">
+                        <img width=25px src="../src/images/class-arrow-up.png"> <!-- botão -->
+                        <a> 32 </a>
+                        <img width=25px src="../src/images/class-arrow-down.png"> <!-- botão -->
+                    </div>
                 </div>
                 <label> Avaliação: </label>
                 <img src="../src/images/rating-star.jpg" width=105px >
-                <label for="dissertacao">Dissertação:</label>
-                <p> <?php echo $dissert; ?> </p>
+                <div>
+                    <label for="dissertacao">Dissertação:</label>
+                    <p> <?php echo $dissert; ?> </p>
+                </div>
             </div>
         </div>
 
         <div class="card card-resumo">
             <img class="card-img-top card-img-resumo" src="../src/images/profile3.jpg" alt="Card image cap">
             <div class="card-body">
-                <div style='vertical-align: middle'>
-                    <p><b>Nome do Usuário:</b> <?php echo $usuario[1]['nome']; ?></p>
+                <div class="row">
+                    <div class="col-md-10">
+                        <p><b>Nome do Usuário:</b> <?php echo $usuario[2]['nome']; ?></p>
+                    </div>
+                    <div class="col-md-2">
+                        <img width=25px src="../src/images/class-arrow-up.png"> <!-- botão -->
+                        <a> -13 </a>
+                        <img width=25px src="../src/images/class-arrow-down.png"> <!-- botão -->
+                    </div>
                 </div>
                 <label> Avaliação: </label>
                 <img src="../src/images/rating-star.jpg" width=105px >
-                <label for="dissertacao">Dissertação:</label>
-                <p> <?php echo $dissert2; ?> </p>
+                <div>
+                    <label for="dissertacao">Dissertação:</label>
+                    <p> <?php echo $dissert2; ?> </p>
+                </div>
             </div>
         </div>
 
