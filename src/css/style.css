@@ -13,6 +13,13 @@
     align-items: center;
 }
 
+.container {
+    padding-top: 30px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
 .card-disciplina {
     float: left;
     margin: 0 10px 20px 10px;
