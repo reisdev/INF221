@@ -32,9 +32,9 @@
                         <p><b>Nome do Usuário:</b> <?php echo $usuario[0]['nome']; ?></p>
                     </div>
                     <div class="col-md-2 justify-content-center">
-                        <img width=25px src="../src/images/class-arrow-up.png"> <!-- botão --> <!-- botão -->
+                        <i class='fas fa-chevron-up' style='font-size: 25px'></i> <!-- botão --> <!-- botão -->
                         <br><a style='padding-left:7px'> 4 </a><br>
-                        <img width=25px src="../src/images/class-arrow-down.png"> <!-- botão -->
+                        <i class='fas fa-chevron-down' style='font-size: 25px'></i> <!-- botão -->
                     </div>
                 </div>
                 <label> Avaliação: </label>
@@ -57,9 +57,9 @@
                         <p><b>Nome do Usuário:</b> <?php echo $usuario[1]['nome']; ?></p>
                     </div>
                     <div class="col-md-2 justify-content-center">
-                        <img width=25px src="../src/images/class-arrow-up.png"> <!-- botão -->
+                        <i class='fas fa-chevron-up' style='font-size: 25px'></i> <!-- botão -->
                         <br><a style='padding-left:3px'> 32 </a><br>
-                        <img width=25px src="../src/images/class-arrow-down.png"> <!-- botão -->
+                        <i class='fas fa-chevron-down' style='font-size: 25px'></i> <!-- botão -->
                     </div>
                 </div>
                 <label> Avaliação: </label>
@@ -79,9 +79,9 @@
                         <p><b>Nome do Usuário:</b> <?php echo $usuario[2]['nome']; ?></p>
                     </div>
                     <div class="col-md-2 justify-content-center">
-                        <img width=25px src="../src/images/class-arrow-up.png"> <!-- botão -->
+                        <i class='fas fa-chevron-up' style='font-size: 25px'></i> <!-- botão -->
                         <br><a> -13 </a><br>
-                        <img width=25px src="../src/images/class-arrow-down.png"> <!-- botão -->
+                        <i class='fas fa-chevron-down' style='font-size: 25px'></i> <!-- botão -->
                     </div>
                 </div>
                 <label> Avaliação: </label>
