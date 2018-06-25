@@ -32,7 +32,7 @@
                         <p><b>Nome do Usuário:</b> <?php echo $usuario[0]['nome']; ?></p>
                     </div>
                     <div class="col-md-2 justify-content-center">
-                        <img width=25px src="../src/images/class-arrow-up.png"> <!-- botão --> <!-- botão -->
+                        <img width=25px src="../src/images/class-arrow-up.png"> <!-- botão -->
                         <br><a style='padding-left:7px'> 4 </a><br>
                         <img width=25px src="../src/images/class-arrow-down.png"> <!-- botão -->
                     </div>

@@ -38,9 +38,18 @@
                         <div class='card card-disciplina'>
                             <div class='d-flex flex-column card-body mt-auto'>
                                 <h5 class='card-title'> <a href='/INF221/pages/resumo_disciplina.php?disciplina={$item["codigo"]}'> {$item['nome']} </a></h5>
-                                <div class='card-text'>
-                                    <p> <b>Código:</b> {$item['codigo']} </p>
-                                    <p> <b>Alunos matrículados</b> {$item['alunos']} </p>
+                                <div class='card-text row'>
+                                    <div class='col-md-10'>
+                                        <p> <b>Código:</b> {$item['codigo']} </p>
+                                        <p> <b>Alunos matrículados</b> {$item['alunos']} </p>
+                                    </div>
+                                    <div class='col-md-2'>
+                                        <img width=25px src='../src/images/class-arrow-up.png'> <!-- botão -->
+                                        <br><a style='padding-left:7px'> 7 </a><br>
+                                        <img width=25px src='../src/images/class-arrow-down.png'> <!-- botão -->
+                                    </div>
+    
+                                    </div>
                                 </div>
                                 <a href='/INF221/pages/avaliacao_disciplina.php?disciplina={$item["codigo"]}' class='mt-auto card-link btn btn-primary' role='button' style='float: 'bottom' '>Avaliar</a>
                             </div>
