@@ -11,6 +11,10 @@ html,body {
 .form-check {
     margin: 15px;
 }
+
+.title {
+    font-size: 35px !important;
+}
 /* Disciplina */
 
 .container-fluid {

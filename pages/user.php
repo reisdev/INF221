@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <?php
     $usuarios = [
-        [ 'nome' => 'Matheus Paulista', 'birthday' => '20-06-2018', 'CPF' => '1921548239102', 'foto' => "../src/images/profile2.jpg"],
-        [ 'nome' => 'Matheus Negro1', 'birthday' => '21-06-2018', 'CPF' => '1921548239102', 'foto' => "../src/images/profile3.jpg"],
-        [ 'nome' => 'Matheus Negro2', 'birthday' => '22-06-2018', 'CPF' => '1921548239102', 'foto' => "../src/images/profile3.jpg"],
-        [ 'nome' => 'Matheus Negro3', 'birthday' => '23-06-2018', 'CPF' => '1921548239102', 'foto' => "../src/images/profile3.jpg"]
+        [ 'nome' => 'Mateus Armod', 'birthday' => '20-06-2018', 'CPF' => '1921548239102', 'foto' => "../src/images/profile2.jpg"],
+        [ 'nome' => 'Matheus Reis', 'birthday' => '14-07-2018', 'CPF' => '9102345282316', 'foto' => "../src/images/profile3.jpg"],
     ];
 
     $avaliacoes = [
@@ -30,10 +28,10 @@
         ?>
         <div class='container-fluid'>
             <div class='card card-body'>
-                <p class='display-4' style='font-size: 40px'> Dados do usuário </p> <br>
+                <p class='display-4 title'> Dados do usuário </p> <br>
                 <div class="profile-header-img">
                     <img class="img-circle" src="../src/images/profile.jpg" />
-                    <div style='vertical-align: middle'>
+                    <div style='vertical-align: middle; padding: 10px'>
                         <p><b>Nome do Usuário:</b> <?php echo $usuario['nome']; ?></p>
                         <p><b>Data de nascimento:</b> <?php echo $usuario['birthday']; ?></p>
                         <p><b>ID do Facebook:</b> <?php echo $usuario['CPF']; ?></p>
@@ -42,7 +40,7 @@
                 <!-- Minhas Avaliações -->
                 <div class='row'>
                     <div class='col-lg-6'>
-                        <br><p class='display-4' style='font-size: 40px'> Suas Avaliações </p> <br>
+                        <br><p class='display-4 title'> Suas Avaliações </p> <br>
                         <div id="carouselAvaliacao" class="carousel slide" data-ride="carousel">
                             <ol class="carousel-indicators">
                                 <?php
@@ -100,7 +98,7 @@
                     </div>
                     <!-- Amigos Conectados -->
                     <div class='col-lg-6'>
-                        <br><p class='display-4' style='font-size: 40px'> Amigos Conectados </p> <br>
+                        <br><p class='display-4 title'> Amigos Conectados </p> <br>
                         <div id="carouselFriends" class="carousel slide" data-ride="carousel">
                             <ol class="carousel-indicators">
                                 <?php
