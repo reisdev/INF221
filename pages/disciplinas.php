@@ -47,9 +47,7 @@
                                         <img width=25px src='../src/images/class-arrow-up.png'> <!-- botão -->
                                         <br><a style='padding-left:7px'> 7 </a><br>
                                         <img width=25px src='../src/images/class-arrow-down.png'> <!-- botão -->
-                                    </div>
-    
-                                    </div>
+                                    </div>    
                                 </div>
                                 <a href='/INF221/pages/avaliacao_disciplina.php?disciplina={$item["codigo"]}' class='mt-auto card-link btn btn-primary' role='button' style='float: 'bottom' '>Avaliar</a>
                             </div>
