@@ -20,23 +20,25 @@
     <body>
         <div class='container-fluid'>
             <div class='card'>
-                <div class='card-body' align='center'>
-                    <form action='' method='get'style='padding-top: 20px; display: inline-flex; width: 80%' align='left'>
-                        <div class='form-group' style='padding-right: 20px; width: 80%;'>
-                            <label> Pesquisa </label>
-                            <input class='form-control' placeholder='Digite a pesquisa desejada' 
-                                                        value='<?php echo $_GET['pesquisa'] ?>'
-                                                        type='text' name='pesquisa'>
-                        </div>
-                        <div class='form-group' style='padding-right: 20px;'>
-                            <label> Filtrar por </label>
-                            <select class='custom-select' name='filtro'>
-                                <option value='aval'> Por avaliações </option>
-                                <option value=''> </option>
-                            </select>
-                        </div>
-                        <button class='btn btn-primary' style='height: fit-content; margin-top: 32px' type='submit'>Buscar</button>
-                    </form>
+                <div class='card-body'>
+                    <div align='center'>
+                        <form action='' method='get'style='padding-top: 20px; display: inline-flex; width: 80%; '>
+                            <div class='form-group' style='padding-right: 20px; width: 80%;'>
+                                <label> Pesquisa </label>
+                                <input class='form-control' placeholder='Digite a pesquisa desejada' 
+                                                            value='<?php echo $_GET['pesquisa'] ?>'
+                                                            type='text' name='pesquisa'>
+                            </div>
+                            <div class='form-group' style='padding-right: 20px;'>
+                                <label> Filtrar por </label>
+                                <select class='custom-select' name='filtro'>
+                                    <option value='aval'> Por avaliações </option>
+                                    <option value=''> </option>
+                                </select>
+                            </div>
+                            <button class='btn btn-primary' style='height: fit-content; margin-top: 32px' type='submit'>Buscar</button>
+                        </form>
+                    </div>
                     <div class='container-fluid justify-content-center'>
                     <?php
                         try {
