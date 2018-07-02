@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <?php
+    require_once '../src/modules/functions.php';
     $disciplinas = [
         [ 'nome' => 'Cálculo I', 'codigo' => 'MAT140', 'alunos' => '450', 'avaliacoes'=> '5'],
         [ 'nome' => 'Cálculo II', 'codigo' => 'MAT147', 'alunos' => '240', 'avaliacoes'=> '-1'],
@@ -17,6 +18,13 @@
         $pesquisa = $_GET['pesquisa'];
     } else {
         $pesquisa = '';
+    }
+    if (isset($_GET['filtro'])) {
+        switch ($_GET['filtro']) {
+            case 'aval':
+                $disciplinas = array_sort($disciplinas, 'avaliacoes', SORT_DESC);
+                break;
+        }
     }
 ?>
 
