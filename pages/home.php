@@ -13,6 +13,11 @@
         [ 'nome' => 'Organização de Computadores I', 'codigo' => 'INF251', 'alunos' => '40', 'avaliacoes'=> '-3'],
         [ 'nome' => 'Linguagens Formais e Autômatos', 'codigo' => 'INF330', 'alunos' => '27', 'avaliacoes'=> '9']
     ];
+    if (isset($_GET['pesquisa'])) {
+        $pesquisa = $_GET['pesquisa'];
+    } else {
+        $pesquisa = '';
+    }
 ?>
 
 <html>
@@ -26,7 +31,7 @@
                             <div class='form-group' style='padding-right: 20px; width: 80%;'>
                                 <label> Pesquisa </label>
                                 <input class='form-control' placeholder='Digite a pesquisa desejada' 
-                                                            value='<?php echo $_GET['pesquisa'] ?>'
+                                                            value='<?php echo $pesquisa; ?>'
                                                             type='text' name='pesquisa'>
                             </div>
                             <div class='form-group' style='padding-right: 20px;'>
