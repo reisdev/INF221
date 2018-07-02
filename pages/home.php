@@ -18,7 +18,7 @@
 <html>
     <?php require '../views/header.php'; ?>
     <body>
-        <div class='container-fluid'>
+        <div class='container-fluid list'>
             <div class='card'>
                 <div class='card-body'>
                     <div align='center'>

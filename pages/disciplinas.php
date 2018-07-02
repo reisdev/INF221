@@ -18,7 +18,7 @@
     ?>
 
     <body>
-        <div class='container-fluid justify-content-center'>
+        <div class='container-fluid justify-content-center list'>
             <?php
                 try {
                     if(isset($_POST['nome']) && $_POST['nome'] !== ""){
