@@ -6,8 +6,7 @@
     <?php
         $usuario = [['nome' => 'Eduardo Moreira Júnior','birthday' => '20-06-2018', 'CPF' => '1921548239102'],
                     ['nome' => 'Mateus Armond Santos','birthday' => '06-01-2018', 'CPF' => '192585256539102'],
-                    [ 'nome' => 'Matheus Negro1', 'birthday' => '21-06-2018', 'CPF' => '1921548239102']
-                    ];
+                    [ 'nome' => 'Matheus Reis', 'birthday' => '21-06-2018', 'CPF' => '1921548239102']];
 
         $dissert = "Chamada oral, três provas valendo 100 pontos. Professor explica bem, pórem tem uma correção uma pouco pesada
 , mas nada que se estudar direitinho não dê para passar :=)";
