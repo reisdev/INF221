@@ -29,27 +29,13 @@
                     <div class="form-check">
                         <label> Esta disciplina é fácil? </label>
                         <label class="form-check-label row">
-                            <div class="col-sm-2">
-                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-                            Sim
-                            </div>
-                            <div class="col-sm-2">
-                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                            Não
-                            </div>
+                            <img src="../src/images/rating-star.jpg" width=105px height=29px >
                         </label>
                     </div>
                     <div class="form-check">
                         <label> Esta disciplina é útil? </label>
                         <label class="form-check-label row">
-                            <div class="col-sm-2">
-                            <input class="form-check-input" type="radio" name="gridRadiosb" id="gridRadios3" value="option3" checked>
-                            Sim
-                            </div>
-                            <div class="col-sm-2">
-                            <input class="form-check-input" type="radio" name="gridRadiosb" id="gridRadios4" value="option4">
-                            Não
-                            </div>
+                            <img src="../src/images/rating-star.jpg" width=105px height=29px >  
                         </label>
                     </div>
                     <div class="form-check">
