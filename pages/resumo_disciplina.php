@@ -5,7 +5,7 @@
     <body>
     <?php
         $usuario = [['nome' => 'Eduardo Moreira Júnior','birthday' => '20-06-2018', 'CPF' => '1921548239102'],
-                    ['nome' => 'Mateus Armond Santos','birthday' => '06-01-2018', 'CPF' => '192585256539102'],
+                    ['nome' => 'Mateus Armond','birthday' => '06-01-2018', 'CPF' => '192585256539102'],
                     [ 'nome' => 'Matheus Reis', 'birthday' => '21-06-2018', 'CPF' => '1921548239102']];
 
         $dissert = "Chamada oral, três provas valendo 100 pontos. Professor explica bem, pórem tem uma correção uma pouco pesada
@@ -27,13 +27,17 @@
             <img class="card-img-top card-img-resumo" src="../src/images/profile.jpg" alt="Card image cap">
                 <div class="card-body">
                 <div class="row">
-                    <div class="col-md-10">
+                    <div class="col-md-6">
                         <p><b>Nome do Usuário:</b> <?php echo $usuario[0]['nome']; ?></p>
                     </div>
-                    <div class="col-md-2 justify-content-center">
-                        <i class='fas fa-chevron-up' style='font-size: 25px'></i> <!-- botão --> <!-- botão -->
-                        <br><a style='padding-left:7px'> 4 </a><br>
-                        <i class='fas fa-chevron-down' style='font-size: 25px'></i> <!-- botão -->
+                    <div class="col-md-6 justify-content-center">
+                        <div class='col' >
+                            <div style='float: right' align=center >
+                                <a>4</a>
+                                <i class='fas fa-arrow-alt-circle-up' style='font-size: 20px; color:green;'></i>
+                                <i class='fas fa-arrow-alt-circle-down' style='font-size: 20px; color:red;'></i>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <label> Avaliação: </label>
@@ -52,13 +56,17 @@
             <img class="card-img-top card-img-resumo" src="../src/images/profile2.jpg" alt="Card image cap">
             <div class="card-body">
                 <div class="row">
-                    <div class="col-md-10">
+                    <div class="col-md-6">
                         <p><b>Nome do Usuário:</b> <?php echo $usuario[1]['nome']; ?></p>
                     </div>
-                    <div class="col-md-2 justify-content-center">
-                        <i class='fas fa-chevron-up' style='font-size: 25px'></i> <!-- botão -->
-                        <br><a style='padding-left:3px'> 32 </a><br>
-                        <i class='fas fa-chevron-down' style='font-size: 25px'></i> <!-- botão -->
+                    <div class="col-md-6 justify-content-center">
+                        <div class='col' >
+                            <div style='float: right' align=center >
+                                <a>32</a>
+                                <i class='fas fa-arrow-alt-circle-up' style='font-size: 20px; color:green;'></i>
+                                <i class='fas fa-arrow-alt-circle-down' style='font-size: 20px; color:red;'></i>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <label> Avaliação: </label>
@@ -67,6 +75,7 @@
                     <label for="dissertacao">Dissertação:</label>
                     <p> <?php echo $dissert; ?> </p>
                 </div>
+                <?php  echo "<a href='/INF221/pages/profile.php?nome=".$usuario[1]['nome']."' class='mt-auto card-link btn btn-primary' role='button' style='float: "."bottom"."'>Ver Perfil</a>"; ?>
             </div>
         </div>
 
@@ -74,13 +83,17 @@
             <img class="card-img-top card-img-resumo" src="../src/images/profile3.jpg" alt="Card image cap">
             <div class="card-body">
                 <div class="row">
-                    <div class="col-md-10">
+                    <div class="col-md-6">
                         <p><b>Nome do Usuário:</b> <?php echo $usuario[2]['nome']; ?></p>
                     </div>
-                    <div class="col-md-2 justify-content-center">
-                        <i class='fas fa-chevron-up' style='font-size: 25px'></i> <!-- botão -->
-                        <br><a> -13 </a><br>
-                        <i class='fas fa-chevron-down' style='font-size: 25px'></i> <!-- botão -->
+                    <div class="col-md-6 justify-content-center">
+                        <div class='col' >
+                            <div style='float: right' align=center >
+                                <a>-13</a>
+                                <i class='fas fa-arrow-alt-circle-up' style='font-size: 20px; color:green;'></i>
+                                <i class='fas fa-arrow-alt-circle-down' style='font-size: 20px; color:red;'></i>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <label> Avaliação: </label>
@@ -89,6 +102,7 @@
                     <label for="dissertacao">Dissertação:</label>
                     <p> <?php echo $dissert2; ?> </p>
                 </div>
+                <?php  echo "<a href='/INF221/pages/profile.php?nome=".$usuario[2]['nome']."' class='mt-auto card-link btn btn-primary' role='button' style='float: 'bottom''>Ver Perfil</a>"; ?>
             </div>
         </div>
         <div align='center'>
