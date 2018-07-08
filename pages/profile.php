@@ -6,8 +6,8 @@
     <?php
 
     $usuarios = [
-        [ 'nome' => 'Mateus Armond', 'birthday' => '20-06-2018', 'CPF' => '1921548239102', 'foto' => "../src/images/profile2.jpg"],
-        [ 'nome' => 'Matheus Reis', 'birthday' => '21-06-2018', 'CPF' => '1921548239102', 'foto' => "../src/images/profile3.jpg"],
+        [ 'nome' => 'Mateus Armond', 'birthday' => '20-06-2018', 'CPF' => '1921548239102', 'foto' => "../src/images/profile2.jpg", 'avaliacao' => 5],
+        [ 'nome' => 'Matheus Reis', 'birthday' => '21-06-2018', 'CPF' => '1921548239102', 'foto' => "../src/images/profile3.jpg", 'avaliacao' => -5],
     ];
     if(!empty($_GET['nome'])){
         foreach($usuarios as $item){
@@ -39,6 +39,8 @@
                     <p><b>Nome do Usuário:</b> <?php echo $usuario['nome']; ?></p>
                     <p><b>Data de nascimento:</b> <?php echo $usuario['birthday']; ?></p>
                     <p><b>ID do Facebook:</b> <?php echo $usuario['CPF']; ?></p>
+                    <p><b>Confiabilidade:</b> <?php if($usuario['avaliacao'] > 2) echo "<span style='color: green'>Usuário confiável</span>";
+                                                    else echo "<span style='color:red'>Usuário não confiável</span>"; ?> <p>
                 </div>
             </div>
 

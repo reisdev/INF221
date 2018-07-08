@@ -38,7 +38,7 @@
                         <form action='' method='get'style='padding-top: 20px; display: inline-flex; width: 80%; '>
                             <div class='form-group' style='padding-right: 20px; width: 80%;'>
                                 <label> Pesquisa </label>
-                                <input class='form-control' placeholder='Digite a pesquisa desejada' 
+                                <input class='form-control' placeholder='Digite a pesquisa desejada'
                                                             value='<?php echo $pesquisa; ?>'
                                                             type='text' name='pesquisa'>
                             </div>
@@ -79,9 +79,9 @@
                                             </div>
                                             <div class='col' >
                                                 <div style='float: right' align=center >
-                                                    <i class='fas fa-chevron-up' style='font-size: 25px'></i>
-                                                    <br><a>{$item['avaliacoes']}</a><br>
-                                                    <i class='fas fa-chevron-down' style='font-size: 25px'></i>
+                                                    <a>{$item['avaliacoes']}</a>
+                                                    <i class='fas fa-arrow-alt-circle-up' style='font-size: 20px; color:green;'></i>
+                                                    <i class='fas fa-arrow-alt-circle-down' style='font-size: 20px; color:red;'></i>
                                                 </div>
                                             </div>
                                         </div>
@@ -94,6 +94,6 @@
                     </div>
                 </div>
             </div>
-        </div>  
+        </div>
     </body>
 </html>
