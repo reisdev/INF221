@@ -23,10 +23,7 @@ class ControllerReacoes extends Controller
             return response()->json($reacao,200);
         }
         catch(QueryException $error){
-            return response()->json([
-                "status"=> 500,
-                "message" => "O usuário ou a disciplina fornecidos não existem"
-            ])->header('Content-Type','application/json; charset=utf-8');
+            return response()->json("O usuário ou a disciplina fornecidos não existem",500)->header('Content-Type','application/json; charset=utf-8');
         }
     }
 }

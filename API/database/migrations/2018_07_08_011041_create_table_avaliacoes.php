@@ -16,9 +16,10 @@ class CreateTableAvaliacoes extends Migration
         Schema::create('avaliacoes', function (Blueprint $table) {
             $table->increments('id');
             $table->string("cod_disciplina");
-            $table->foreign("cod_disciplina")->references("cod_disciplina")->on("disciplinas");
+            $table->foreign("cod_disciplina")->references("codigo")->on("disciplinas");
             $table->string("id_usuario");
             $table->foreign("id_usuario")->references("id_fb")->on("users");
+            $table->string("descricao");
             $table->double("nota");
             $table->double("facilidade");
             $table->double("recomendacao");

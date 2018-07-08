@@ -14,11 +14,11 @@ class CreateTableDisciplina extends Migration
     public function up()
     {
         Schema::create('disciplinas', function (Blueprint $table) {
-            $table->string("cod_disciplina")->unique();
+            $table->string("codigo")->unique();
             $table->string("nome");
-            $table->double("nota");
-            $table->double("dificuldade");
-            $table->string("semestre");
+            $table->double("nota")->default(0);
+            $table->double("dificuldade")->default(0);
+            $table->integer("semestre");
             $table->string("departamento");
             $table->timestamps();
         });

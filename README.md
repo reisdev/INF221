@@ -4,3 +4,58 @@ Repositório do Trabalho Prático de INF221 - Engenharia de Software
 ## Dependências
 
 * [Bootstrap v4](https://getbootstrap.com/docs/4.1/getting-started/introduction/)
+* [Laravel 5.6](https://laravel.com/docs/5.6)
+
+## API
+
+Rotas disponíveis:
+
+
+### ```GET /api/disciplinas ```
+
+Retorna todas as disciplinas cadastradas
+
+### ``` POST /api/disciplinas ```
+
+Parâmetros:
+
+```javascript
+{
+    "codigo": String,
+    "nome": String,
+    "semestre": int, // 1 ou 2
+    "departamento": String
+}
+```
+
+### ```GET /api/avaliacoes ```
+
+Retorna todas as avaliações cadastradas
+
+### ``` POST /api/avaliacoes ```
+
+Parâmetros:
+
+```javascript
+{
+    "disciplina": String ou null,
+    "avaliador": String,
+    "descricao": String,
+    "nota": double,
+    "facilidade": double,
+    "utilidade": double,
+    "recomendacao": double
+}
+```
+
+## Execução
+
+Para rodar a API, basta executar os seguintes comandos:
+
+```bash
+
+$ cd API
+
+$ php artisan serve
+
+```

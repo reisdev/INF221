@@ -17,7 +17,7 @@ class CreateTableReacoes extends Migration
             $table->increments('id');
             $table->integer("tipo");
             $table->string("cod_disciplina");
-            $table->foreign("cod_disciplina")->references("cod_disciplina")->on("disciplinas");
+            $table->foreign("cod_disciplina")->references("codigo")->on("disciplinas");
             $table->string("id_avaliador");
             $table->foreign("id_avaliador")->references("id_fb")->on("users");
             $table->timestamps();

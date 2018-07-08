@@ -29,7 +29,9 @@ Route::get('csrf', function() {
 
 Route::group(array("prefix" => "api"), function(){
     Route::get('disciplinas','ControllerDisciplina@index');
+    Route::post('disciplinas','ControllerDisciplina@insert');
     Route::get('avaliacoes','ControllerAvaliacoes@index');
+    Route::post('avaliacoes','ControllerAvaliacoes@insert');
     Route::get('reacoes',"ControllerReacoes@index");
     Route::post('reacoes',"ControllerReacoes@insert");
 });
