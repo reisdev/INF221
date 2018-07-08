@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Database\QueryException;
 use App\Reacao;
 
 class ControllerReacoes extends Controller
@@ -21,8 +22,11 @@ class ControllerReacoes extends Controller
                 "tipo"=> $req["tipo"]]);
             return response()->json($reacao,200);
         }
-        catch(Exception $error){
-            return response()->json(["status"=> 500, "message" => $error]);
+        catch(QueryException $error){
+            return response()->json([
+                "status"=> 500,
+                "message" => "O usuário ou a disciplina fornecidos não existem"
+            ])->header('Content-Type','application/json; charset=utf-8');
         }
     }
 }
