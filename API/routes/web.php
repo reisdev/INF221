@@ -11,7 +11,9 @@
 |
 */
 
+
 use App\Http\Controllers\ControllerDisciplina;
+use App\Http\Controllers\ControllerAvaliacoes;
 
 Route::get('/', function () {
     return view('welcome');
@@ -23,4 +25,5 @@ Route::get('/login', function () {
 
 Route::group(array("prefix" => "api"), function(){
     Route::get('disciplinas','ControllerDisciplina@index');
+    Route::get('avaliacoes','ControllerAvaliacoes@index');
 });

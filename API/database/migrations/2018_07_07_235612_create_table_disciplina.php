@@ -20,6 +20,7 @@ class CreateTableDisciplina extends Migration
             $table->double("dificuldade");
             $table->string("semestre");
             $table->string("departamento");
+            $table->timestamps();
         });
     }
 
