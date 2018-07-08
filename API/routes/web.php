@@ -11,10 +11,25 @@
 |
 */
 
+
+use App\Http\Controllers\ControllerDisciplina;
+use App\Http\Controllers\ControllerAvaliacoes;
+
 Route::get('/', function () {
     return view('welcome');
 });
 
 Route::get('/login', function () {
     return view('login');
+});
+
+Route::get('csrf', function() {
+    return Session::token();
+});
+
+Route::group(array("prefix" => "api"), function(){
+    Route::get('disciplinas','ControllerDisciplina@index');
+    Route::get('avaliacoes','ControllerAvaliacoes@index');
+    Route::get('reacoes',"ControllerReacoes@index");
+    Route::post('reacoes',"ControllerReacoes@insert");
 });
