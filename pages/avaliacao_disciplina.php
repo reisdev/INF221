@@ -2,7 +2,9 @@
 
 <html>
     <?php require '../views/header.php'; ?>
-    <body>
+    <link rel='stylesheet' href='../src/css/star-rating.css'>
+
+<body>
 <div class="container-fluid">
     <div class="card card-body">
         <?php
@@ -11,15 +13,22 @@
             echo "<h3 class='display-4' align='center' style='padding-bottom: 20px; font-size: 40px;'> Avaliação da disciplina {$disciplina} </h3>";
         }
         ?>
+    <form action="/teste.php" method="get" id="dis-form">
         <div class='row'>
             <div class="col-md-6">
                 <label> Avaliação: </label>
-                <img src="../src/images/rating-star.jpg" width=105px >
+                <div class="starrating risingstar d-flex justify-content-end flex-row-reverse">
+                    <input type="radio" id="star5-av" name="rating-av" value="5" /><label for="star5-av" title="5 star">5</label>
+                    <input type="radio" id="star4-av" name="rating-av" value="4" /><label for="star4-av" title="4 star">4</label>
+                    <input type="radio" id="star3-av" name="rating-av" value="3" /><label for="star3-av" title="3 star">3</label>
+                    <input type="radio" id="star2-av" name="rating-av" value="2" /><label for="star2-av" title="2 star">2</label>
+                    <input type="radio" id="star1-av" name="rating-av" value="1" /><label for="star1-av" title="1 star">1</label>
+                </div>
                 <br>
                 <div class="form-group">
                     <label for="dissertacao">Dissertação:</label>
                     <small class="form-text text-muted">Tente explicar os métodos de avaliação, controle de presença, entre outros detalhes.</small>
-                    <textarea class="form-control" rows="5" id="dissertacao"></textarea>
+                    <textarea  name="user-comment" form="dis-form" class="form-control" rows="5" id="dissertacao"></textarea>
                 </div>
             </div>
 
@@ -29,24 +38,36 @@
                     <div class="form-check">
                         <label> Esta disciplina é fácil? </label>
                         <label class="form-check-label row">
-                            <img src="../src/images/rating-star.jpg" width=105px height=29px >
+                            <div class="starrating risingstar d-flex justify-content-center flex-row-reverse">
+                                <input type="radio" id="star5-dis" name="rating-dis" value="5" /><label for="star5-dis" title="5 star">5</label>
+                                <input type="radio" id="star4-dis" name="rating-dis" value="4" /><label for="star4-dis" title="4 star">4</label>
+                                <input type="radio" id="star3-dis" name="rating-dis" value="3" /><label for="star3-dis" title="3 star">3</label>
+                                <input type="radio" id="star2-dis" name="rating-dis" value="2" /><label for="star2-dis" title="2 star">2</label>
+                                <input type="radio" id="star1-dis" name="rating-dis" value="1" /><label for="star1-dis" title="1 star">1</label>
+                            </div>
                         </label>
                     </div>
                     <div class="form-check">
                         <label> Esta disciplina é útil? </label>
                         <label class="form-check-label row">
-                            <img src="../src/images/rating-star.jpg" width=105px height=29px >  
+                            <div class="starrating risingstar d-flex justify-content-center flex-row-reverse">
+                                <input type="radio" id="star5-u" name="rating-u" value="5" /><label for="star5-u" title="5 star">5</label>
+                                <input type="radio" id="star4-u" name="rating-u" value="4" /><label for="star4-u" title="4 star">4</label>
+                                <input type="radio" id="star3-u" name="rating-u" value="3" /><label for="star3-u" title="3 star">3</label>
+                                <input type="radio" id="star2-u" name="rating-u" value="2" /><label for="star2-u" title="2 star">2</label>
+                                <input type="radio" id="star1-u" name="rating-u" value="1" /><label for="star1-u" title="1 star">1</label>
+                            </div>  
                         </label>
                     </div>
                     <div class="form-check">
                         <label> Você recomenda essa disciplina? </label>
                         <label class="form-check-label row">
                             <div class="col-sm-2">
-                            <input class="form-check-input" type="radio" name="gridRadiosc" id="gridRadios5" value="option5" checked>
+                            <input class="form-check-input" type="radio" name="reco-dis" id="gridRadios" value="sim" checked>
                             Sim
                             </div>
                             <div class="col-sm-2">
-                            <input class="form-check-input" type="radio" name="gridRadiosc" id="gridRadios6" value="option6">
+                            <input class="form-check-input" type="radio" name="reco-dis" id="gridRadios2" value="nao">
                             Não
                             </div>
                         </label>
@@ -56,8 +77,9 @@
             </div>
         </div>
         <div align=center>
-            <a href='/INF221/pages/avaliacao_disciplina.php' class='mt-auto card-link btn btn-primary' role='button' style='float: bottom ' >Avaliar</a>
+            <button type="submit" class="btn btn-primary">Submit</button>
         </div>
+    </form>
     </div>
 </div>
 
