@@ -9,6 +9,6 @@ class Avaliacao extends Model
     protected $table = "avaliacoes";
 
     protected $fillable = [
-        "ID","cod_disciplina","descricao","nota","facilidade","recomendacao","utilidade"
+        "id","cod_disciplina","descricao","nota","facilidade","recomendacao","utilidade"
     ];
 }

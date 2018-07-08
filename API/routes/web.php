@@ -23,7 +23,13 @@ Route::get('/login', function () {
     return view('login');
 });
 
+Route::get('csrf', function() {
+    return Session::token();
+});
+
 Route::group(array("prefix" => "api"), function(){
     Route::get('disciplinas','ControllerDisciplina@index');
     Route::get('avaliacoes','ControllerAvaliacoes@index');
+    Route::get('reacoes',"ControllerReacoes@index");
+    Route::post('reacoes',"ControllerReacoes@insert");
 });
