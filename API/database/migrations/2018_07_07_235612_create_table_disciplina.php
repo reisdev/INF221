@@ -13,7 +13,7 @@ class CreateTableDisciplina extends Migration
      */
     public function up()
     {
-        Schema::create('disciplina', function (Blueprint $table) {
+        Schema::create('disciplinas', function (Blueprint $table) {
             $table->string("cod_disciplina")->unique();
             $table->string("nome");
             $table->double("nota");
@@ -30,6 +30,6 @@ class CreateTableDisciplina extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists("disciplina");
+        Schema::dropIfExists("disciplinas");
     }
 }

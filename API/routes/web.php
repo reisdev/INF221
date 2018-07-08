@@ -11,10 +11,16 @@
 |
 */
 
+use App\Http\Controllers\ControllerDisciplina;
+
 Route::get('/', function () {
     return view('welcome');
 });
 
 Route::get('/login', function () {
     return view('login');
+});
+
+Route::group(array("prefix" => "api"), function(){
+    Route::get('disciplinas','ControllerDisciplina@index');
 });
