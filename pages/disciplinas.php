@@ -45,9 +45,9 @@
                                     </div>
                                     <div class='col' >
                                         <div style='float: right' align=center >
-                                            <i class='fas fa-chevron-up' style='font-size: 25px'></i>
-                                            <br><a>{$item['avaliacoes']}</a><br>
-                                            <i class='fas fa-chevron-down' style='font-size: 25px'></i>
+                                            <a>{$item['avaliacoes']}</a>
+                                            <i class='fas fa-arrow-alt-circle-up' style='font-size: 20px; color:green;'></i>
+                                            <i class='fas fa-arrow-alt-circle-down' style='font-size: 20px; color:red;'></i>
                                         </div>
                                     </div>
                                 </div>
