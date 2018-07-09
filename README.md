@@ -78,6 +78,14 @@ Parâmetros:
 
 Retorna todas as avaliações cadastradas
 
+### ```GET /api/avaliacoes/disciplina/{codigo} ```
+
+Retorna todas as avaliações cadastradas através do código da disciplina
+
+### ```GET /api/avaliacoes/usuario/{id_usuario} ```
+
+Retorna todas as avaliações cadastradas através do id
+
 ### ``` POST /api/avaliacoes ```
 
 Parâmetros:

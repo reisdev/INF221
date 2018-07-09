@@ -31,6 +31,8 @@ Route::group(array("prefix" => "api"), function(){
     Route::get('disciplinas','ControllerDisciplina@index');
     Route::post('disciplinas','ControllerDisciplina@insert');
     Route::get('avaliacoes','ControllerAvaliacoes@index');
+    Route::get('avaliacoes/disciplina/{id}','ControllerAvaliacoes@porDisciplina');
+    Route::get('avaliacoes/usuario/{id}','ControllerAvaliacoes@porUsuario');
     Route::post('avaliacoes','ControllerAvaliacoes@insert');
     Route::get('reacoes',"ControllerReacoes@index");
     Route::post('reacoes',"ControllerReacoes@insert");

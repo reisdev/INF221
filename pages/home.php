@@ -63,32 +63,11 @@ function changeNegative(id, id2){
 <?php
     require_once '../src/modules/functions.php';
 
-    // $disciplinas = [
-    //     [ 'nome' => 'Cálculo I', 'codigo' => 'MAT140', 'alunos' => '450', 'avaliacoes'=> '5'],
-    //     [ 'nome' => 'Cálculo II', 'codigo' => 'MAT147', 'alunos' => '240', 'avaliacoes'=> '-1'],
-    //     [ 'nome' => 'Cálculo III', 'codigo' => 'MAT241', 'alunos' => '70', 'avaliacoes'=> '7'],
-    //     [ 'nome' => 'Programação I', 'codigo' => 'INF110', 'alunos' => '60', 'avaliacoes'=> '65'],
-    //     [ 'nome' => 'Programação II', 'codigo' => 'INF112', 'alunos' => '60','avaliacoes'=> '21'],
-    //     [ 'nome' => 'Estrutura de Dados', 'codigo' => 'INF213', 'alunos' => '60','avaliacoes'=> '12'],
-    //     [ 'nome' => 'Engenharia de Software I', 'codigo' => 'INF221', 'alunos' => '36','avaliacoes'=> '25'],
-    //     [ 'nome' => 'Física I', 'codigo' => 'FIS201', 'alunos' => '76', 'avaliacoes'=> '-7'],
-    //     [ 'nome' => 'Organização de Computadores I', 'codigo' => 'INF251', 'alunos' => '40', 'avaliacoes'=> '-3'],
-    //     [ 'nome' => 'Linguagens Formais e Autômatos', 'codigo' => 'INF330', 'alunos' => '27', 'avaliacoes'=> '9']
-    // ];
     if (isset($_GET['pesquisa'])) {
         $pesquisa = $_GET['pesquisa'];
     } else {
         $pesquisa = '';
     }
-    // if (isset($_GET['filtro'])) {
-    //     switch ($_GET['filtro']) {
-    //         case 'aval':
-    //             $disciplinas = array_sort($disciplinas, 'avaliacoes', SORT_DESC);
-    //             break;
-    //     }
-    // }
-
-    // echo "<script type='text/javascript'>test_post();</script>";
 
     $json = file_get_contents('http://localhost:8000/api/disciplinas');
     $disciplinas = json_decode($json, true);

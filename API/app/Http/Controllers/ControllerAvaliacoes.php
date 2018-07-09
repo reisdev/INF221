@@ -30,6 +30,12 @@ class ControllerAvaliacoes extends Controller
 
         return response()->json($avaliacao,200);
     }
+    public function porDisciplina(Request $req,$id){
+        return Avaliacao::where("cod_disciplina",$id)->get();
+    }
+    public function porUsuario(Request $req,$id){
+        return Avaliacao::where("id_usuario",$id)->get();
+    }
     public static function propaga($codigo){
         // Re-calcula média notas
         $avaliacoes = Avaliacao::where("cod_disciplina","=",$codigo)->get();
