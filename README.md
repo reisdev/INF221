@@ -8,6 +8,48 @@ Repositório do Trabalho Prático de INF221 - Engenharia de Software
 
 ## API
 
+### Execução
+
+Para rodar a API, basta executar os seguintes comandos:
+
+```bash
+
+$ cd API
+
+$ php artisan serve
+
+```
+
+### Migrações
+
+Para criar as tabelas, execute o seguinte comando:
+
+```bash
+$ php artisan migrate
+```
+
+Caso queira fazer a migração novamente, apagando as tabelas já existentes, execute o comando abaixo:
+
+```bash
+$ php artisan migrate:refresh
+```
+
+### Seeds
+
+Para preencher as tabelas automaticamente, execute:
+
+```bash
+$ php artisan db:seed
+```
+
+Caso apresente algum erro de `class SeuSeeder does not exist`, execute o comando abaixo:
+
+```bash
+$ composer dump-autoload
+```
+
+### Rotas
+
 Rotas disponíveis:
 
 
@@ -46,44 +88,4 @@ Parâmetros:
     "utilidade": double,
     "recomendacao": double
 }
-```
-
-## Execução
-
-Para rodar a API, basta executar os seguintes comandos:
-
-```bash
-
-$ cd API
-
-$ php artisan serve
-
-```
-
-## Migrações
-
-Para criar as tabelas, execute o seguinte comando:
-
-```bash
-$ php artisan migrate
-```
-
-Caso queira fazer a migração novamente, apagando as tabelas já existentes, execute o comando abaixo:
-
-```bash
-$ php artisan migrate:refresh
-```
-
-## Seeds
-
-Para preencher as tabelas automaticamente, execute:
-
-```bash
-$ php artisan db:seed
-```
-
-Caso apresente algum erro de `class SeuSeeder does not exist`, execute o comando abaixo:
-
-```bash
-$ composer dump-autoload
 ```
