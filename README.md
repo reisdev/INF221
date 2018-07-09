@@ -3,6 +3,14 @@ Repositório do Trabalho Prático de INF221 - Engenharia de Software
 
 ## Dependências
 
+
+### Principais
+
+* [PHP 7.1.10](http://php.net/downloads.php)
+* [Composer 1.6.3](https://getcomposer.org/)
+
+### Secundárias
+
 * [Bootstrap v4](https://getbootstrap.com/docs/4.1/getting-started/introduction/)
 * [Laravel 5.6](https://laravel.com/docs/5.6)
 
