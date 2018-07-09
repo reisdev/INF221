@@ -59,3 +59,17 @@ $ cd API
 $ php artisan serve
 
 ```
+
+## Migrações
+
+Para criar as tabelas, execute o seguinte comando:
+
+```bash
+$ php artisan migrate
+```
+
+Caso queira fazer a migração novamente, apagando as tabelas já existentes, execute o comando abaixo:
+
+```bash
+$ php artisan migrate:refresh
+```
