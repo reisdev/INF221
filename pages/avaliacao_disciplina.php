@@ -13,13 +13,13 @@
             echo "<h3 class='display-4' align='center' style='padding-bottom: 20px; font-size: 40px;'> Avaliação da disciplina {$disciplina} </h3>";
         }
         ?>
-    <form action="/teste.php" method="get" id="dis-form">
+    <form action="grava_avaliacao.php" method="get" id="dis-form">
         <div class='row'>
             <div class="col-md-6">
 
                 <div class="form-group">
                     <label for="professor">Professor:</label>
-                    <br><input type="text" name="Professor"><br>
+                    <br><input type="text" name="professor"><br>
                 </div>
                 <div class="form-group">
                     <label for="dissertacao">Dissertação:</label>
