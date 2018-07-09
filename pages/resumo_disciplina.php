@@ -1,5 +1,21 @@
 <!DOCTYPE html>
+<script>
+function changePositive(id, id2){
+    if( document.getElementById(id).style.color == "green")
+        document.getElementById(id).style.color = "black"; // forecolor
+    else
+        document.getElementById(id).style.color = "green";
+    document.getElementById(id2).style.color = "black";
 
+}
+function changeNegative(id, id2){
+    if( document.getElementById(id).style.color == "red")
+        document.getElementById(id).style.color = "black"; // forecolor
+    else
+        document.getElementById(id).style.color = "red";
+    document.getElementById(id2).style.color = "black";
+}
+</script>
 <html>
     <?php require '../views/header.php'; ?>
     <body>
@@ -34,8 +50,6 @@
                         <div class='col' >
                             <div style='float: right' align=center >
                                 <a>4</a>
-                                <i class='fas fa-arrow-alt-circle-up' style='font-size: 20px; color:green;'></i>
-                                <i class='fas fa-arrow-alt-circle-down' style='font-size: 20px; color:red;'></i>
                             </div>
                         </div>
                     </div>
@@ -63,8 +77,8 @@
                         <div class='col' >
                             <div style='float: right' align=center >
                                 <a>32</a>
-                                <i class='fas fa-arrow-alt-circle-up' style='font-size: 20px; color:green;'></i>
-                                <i class='fas fa-arrow-alt-circle-down' style='font-size: 20px; color:red;'></i>
+                                <?php echo "<i id='positive{$usuario[1]['nome']}' class='fas fa-arrow-alt-circle-up'  onClick='changePositive(`positive{$usuario[1]['nome']}`,`negative{$usuario[1]['nome']}`);' style='font-size: 20px;'></i>
+                                <i id='negative{$usuario[1]['nome']}' class='fas fa-arrow-alt-circle-down' onClick='changeNegative(`negative{$usuario[1]['nome']}`,`positive{$usuario[1]['nome']}`);' style='font-size: 20px;'></i>"; ?>
                             </div>
                         </div>
                     </div>
@@ -90,8 +104,8 @@
                         <div class='col' >
                             <div style='float: right' align=center >
                                 <a>-13</a>
-                                <i class='fas fa-arrow-alt-circle-up' style='font-size: 20px; color:green;'></i>
-                                <i class='fas fa-arrow-alt-circle-down' style='font-size: 20px; color:red;'></i>
+                                <?php echo "<i id='positive{$usuario[2]['nome']}' class='fas fa-arrow-alt-circle-up'  onClick='changePositive(`positive{$usuario[2]['nome']}`,`negative{$usuario[2]['nome']}`);' style='font-size: 20px;'></i>
+                                <i id='negative{$usuario[2]['nome']}' class='fas fa-arrow-alt-circle-down' onClick='changeNegative(`negative{$usuario[2]['nome']}`,`positive{$usuario[2]['nome']}`);' style='font-size: 20px;'></i>"; ?>
                             </div>
                         </div>
                     </div>
