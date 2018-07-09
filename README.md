@@ -65,23 +65,6 @@ $ composer dump-autoload
 Rotas disponíveis:
 
 
-### ```GET /api/disciplinas ```
-
-Retorna todas as disciplinas cadastradas
-
-### ``` POST /api/disciplinas ```
-
-Parâmetros:
-
-```javascript
-{
-    "codigo": String,
-    "nome": String,
-    "semestre": int, // 1 ou 2
-    "departamento": String
-}
-```
-
 ### ```GET /api/avaliacoes ```
 
 Retorna todas as avaliações cadastradas
@@ -108,6 +91,23 @@ Parâmetros:
     "facilidade": double,
     "utilidade": double,
     "recomendacao": bool
+}
+```
+
+### ```GET /api/disciplinas ```
+
+Retorna todas as disciplinas cadastradas
+
+### ``` POST /api/disciplinas ```
+
+Parâmetros:
+
+```javascript
+{
+    "codigo": String,
+    "nome": String,
+    "semestre": int, // 1 ou 2
+    "departamento": String
 }
 ```
 
