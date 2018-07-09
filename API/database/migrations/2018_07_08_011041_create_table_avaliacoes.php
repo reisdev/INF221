@@ -20,9 +20,10 @@ class CreateTableAvaliacoes extends Migration
             $table->string("id_usuario");
             $table->foreign("id_usuario")->references("id_fb")->on("users");
             $table->string("descricao");
+            $table->string("professor");
             $table->double("nota");
             $table->double("facilidade");
-            $table->double("recomendacao");
+            $table->boolean("recomendacao");
             $table->double("utilidade");
             $table->timestamps();
         });

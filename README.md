@@ -83,9 +83,10 @@ Parâmetros:
     "disciplina": String ou null,
     "avaliador": String,
     "descricao": String,
+    "professor": String,
     "nota": double,
     "facilidade": double,
     "utilidade": double,
-    "recomendacao": double
+    "recomendacao": bool
 }
 ```

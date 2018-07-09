@@ -17,7 +17,9 @@ class CreateTableDisciplina extends Migration
             $table->string("codigo")->unique();
             $table->string("nome");
             $table->double("nota")->default(0);
-            $table->double("dificuldade")->default(0);
+            $table->double("facilidade")->default(0);
+            $table->double("utilidade")->default(0);
+            $table->integer("recomendacoes")->default(0);
             $table->integer("semestre");
             $table->string("departamento");
             $table->timestamps();
