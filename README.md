@@ -16,7 +16,9 @@ Para rodar a API, basta executar os seguintes comandos:
 
 $ cd API
 
-$ composer install && npm install
+$ composer install
+
+$ npm install
 
 $ php artisan serve
 
