@@ -34,4 +34,6 @@ Route::group(array("prefix" => "api"), function(){
     Route::post('avaliacoes','ControllerAvaliacoes@insert');
     Route::get('reacoes',"ControllerReacoes@index");
     Route::post('reacoes',"ControllerReacoes@insert");
+    Route::get('usuarios',"ControllerUsuario@index");
+    Route::post('usuarios',"ControllerUsuario@insert");
 });

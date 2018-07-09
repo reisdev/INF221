@@ -94,3 +94,19 @@ Parâmetros:
     "recomendacao": bool
 }
 ```
+
+### ```GET /api/usuarios ```
+
+Retorna todas os usuários cadastrados
+
+### ``` POST /api/usuarios ```
+
+Parâmetros:
+
+```javascript
+{
+    "id_facebook": String,
+    "curso": String,
+    "data_ingresso": String
+}
+```
