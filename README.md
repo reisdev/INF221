@@ -73,3 +73,17 @@ Caso queira fazer a migração novamente, apagando as tabelas já existentes, ex
 ```bash
 $ php artisan migrate:refresh
 ```
+
+## Seeds
+
+Para preencher as tabelas automaticamente, execute:
+
+```bash
+$ php artisan db:seed
+```
+
+Caso apresente algum erro de `class SeuSeeder does not exist`, execute o comando abaixo:
+
+```bash
+$ composer dump-autoload
+```
