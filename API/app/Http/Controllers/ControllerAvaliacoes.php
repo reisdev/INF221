@@ -16,7 +16,7 @@ class ControllerAvaliacoes extends Controller
         || !$req->has('recomendacao') || !$req->has('professor')){
             return response()->json("Você não forneceu todos os campos necessários",500);
         }
-        $resp = Avaliacao::create([
+        $avaliacao = Avaliacao::create([
             "cod_disciplina" => $req['disciplina'],
             "id_usuario" => $req["avaliador"],
             "nota" => $req['nota'],
@@ -26,28 +26,26 @@ class ControllerAvaliacoes extends Controller
             "recomendacao" => $req['recomendacao'],
             "utilidade" => $req['utilidade']
         ]);
-        $this::propaga($req['disciplina']);
+        $this::propaga($req['disciplina']); // Chama a propagação da nova avaliação
 
-        return response()->json($resp,200);
+        return response()->json($avaliacao,200);
     }
     public static function propaga($codigo){
         // Re-calcula média notas
-        $Avaliacoes = Avaliacao::where("cod_disciplina",$codigo);
+        $avaliacoes = Avaliacao::where("cod_disciplina","=",$codigo)->get();
         $facilidade = 0;
         $nota = 0;
         $utilidade = 0;
         $recomendacoes = 0;
-        foreach($Avaliacoes as $aval){
-            return response()->json($aval);
+        foreach($avaliacoes as $aval){
             $nota += $aval["nota"];
             $facilidade += $aval["facilidade"];
             $utilidade += $aval["utilidade"];
-            $recomendacoes += $aval["recomendacao"] ? 1 : 0;
-
+            $recomendacoes += $aval["recomendacao"] ? 1 : -1;
         }
-        $nota = $nota/count($Avaliacoes);
-        $facilidade = $facilidade/count($Avaliacoes);
-        $utilidade = $utilidade/count($Avaliacoes);
-        $disciplina = Disciplina::where("codigo",$codigo)->update(["nota" => $nota, "facilidade" => $facilidade, "utilidade" => $utilidade, "recomendacoes" => $recomendacoes]);
+        $nota = $nota/count($avaliacoes);
+        $facilidade = $facilidade/count($avaliacoes);
+        $utilidade = $utilidade/count($avaliacoes);
+        Disciplina::where("codigo",$codigo)->update(["nota" => $nota, "facilidade" => $facilidade, "utilidade" => $utilidade, "recomendacoes" => $recomendacoes]);
     }
 }
