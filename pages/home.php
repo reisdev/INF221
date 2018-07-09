@@ -23,6 +23,27 @@ function send_value() {
     return false;
 }
 
+// function test_post(){
+//     $.ajax({
+//         type: 'post',
+//         url: 'http://localhost:8000/api/avaliacoes',
+//         data: {
+//             "disciplina": "MAT271",
+//             "avaliador": "Eduardo",
+//             "descricao": "deeu",
+//             "professor": "Sei la",
+//             "nota": 7.2,
+//             "facilidade": 1,
+//             "utilidade": 1,
+//             "recomendacao": 0
+//         },
+//         success: function(data){
+//             console.log(data);
+//         }
+//     });
+//     return false;
+// }
+
 function changePositive(id, id2){
     if( document.getElementById(id).style.color == "green")
         document.getElementById(id).style.color = "black"; // forecolor
@@ -67,10 +88,11 @@ function changeNegative(id, id2){
     //     }
     // }
 
+    // echo "<script type='text/javascript'>test_post();</script>";
+
     $json = file_get_contents('http://localhost:8000/api/disciplinas');
     $disciplinas = json_decode($json, true);
-    print_r($disciplinas[0]);
-    
+
 ?>
 
 
