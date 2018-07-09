@@ -1,7 +1,47 @@
 <!DOCTYPE html>
+<head>
+        <script src='../src/js/jquery-3.3.1.min.js'></script>
+        <script src='../src/js/bootstrap.bundle.min.js'></script>
+        <script src='../src/js/bootstrap.min.js'></script>
+        <script src='../src/js/popper.min.js'></script>
+</head>
+<script>
+function send_value() {
+    $.ajax({
+        type: 'post',
+        url: 'http://localhost:8000/api/disciplinas',
+        data: {
+            "codigo": "MAT211",
+            "nome": "Calculo",
+            "semestre": 1, // 1 ou 2
+            "departamento": "Mat"
+        },
+        success: function (data) {
+            console.log(data);
+        }
+    });
+    return false;
+}
 
+function changePositive(id, id2){
+    if( document.getElementById(id).style.color == "green")
+        document.getElementById(id).style.color = "black"; // forecolor
+    else
+        document.getElementById(id).style.color = "green";
+    document.getElementById(id2).style.color = "black";
+
+}
+function changeNegative(id, id2){
+    if( document.getElementById(id).style.color == "red")
+        document.getElementById(id).style.color = "black"; // forecolor
+    else
+        document.getElementById(id).style.color = "red";
+    document.getElementById(id2).style.color = "black";
+}
+</script>
 <?php
     require_once '../src/modules/functions.php';
+
     $disciplinas = [
         [ 'nome' => 'Cálculo I', 'codigo' => 'MAT140', 'alunos' => '450', 'avaliacoes'=> '5'],
         [ 'nome' => 'Cálculo II', 'codigo' => 'MAT147', 'alunos' => '240', 'avaliacoes'=> '-1'],
@@ -26,7 +66,18 @@
                 break;
         }
     }
+
+    // echo '<script type="text/javascript">',
+    //  'send_value();',
+    //  '</script>';
+
+
+    // $json = file_get_contents('http://localhost:8000/api/disciplinas');
+    // $obj = json_decode($json);
+    // print_r($obj);
 ?>
+
+
 
 <html>
     <?php require '../views/header.php'; ?>
@@ -76,13 +127,6 @@
                                             <div class='col'>
                                                 <p> <b>Código:</b> {$item['codigo']} </p>
                                                 <p> <b>Alunos matrículados</b> {$item['alunos']} </p>
-                                            </div>
-                                            <div class='col' >
-                                                <div style='float: right' align=center >
-                                                    <a>{$item['avaliacoes']}</a>
-                                                    <i class='fas fa-arrow-alt-circle-up' style='font-size: 20px; color:green;'></i>
-                                                    <i class='fas fa-arrow-alt-circle-down' style='font-size: 20px; color:red;'></i>
-                                                </div>
                                             </div>
                                         </div>
                                         <a href='/INF221/pages/avaliacao_disciplina.php?disciplina={$item["codigo"]}' class='mt-auto card-link btn btn-primary' role='button' style='float: 'bottom' '>Avaliar</a>

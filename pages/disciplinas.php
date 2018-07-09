@@ -43,13 +43,6 @@
                                         <p> <b>Código:</b> {$item['codigo']} </p>
                                         <p> <b>Alunos matrículados</b> {$item['alunos']} </p>
                                     </div>
-                                    <div class='col' >
-                                        <div style='float: right' align=center >
-                                            <a>{$item['avaliacoes']}</a>
-                                            <i class='fas fa-arrow-alt-circle-up' style='font-size: 20px; color:green;'></i>
-                                            <i class='fas fa-arrow-alt-circle-down' style='font-size: 20px; color:red;'></i>
-                                        </div>
-                                    </div>
                                 </div>
                                 <a href='/INF221/pages/avaliacao_disciplina.php?disciplina={$item["codigo"]}' class='mt-auto card-link btn btn-primary' role='button' style='float: 'bottom' '>Avaliar</a>
                             </div>
