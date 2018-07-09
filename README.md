@@ -88,11 +88,11 @@ Retorna todas as avaliações cadastradas
 
 ### ```GET /api/avaliacoes/disciplina/{codigo} ```
 
-Retorna todas as avaliações cadastradas através do código da disciplina
+Retorna todas as avaliações cadastradas para uma disciplina através do `codigo`
 
-### ```GET /api/avaliacoes/usuario/{id_usuario} ```
+### ```GET /api/avaliacoes/usuario/{id_facebook} ```
 
-Retorna todas as avaliações cadastradas através do id
+Retorna todas as avaliações cadastradas para um usuário através do `id_facebook`
 
 ### ``` POST /api/avaliacoes ```
 
